@@ -8,7 +8,7 @@ export default function Home() {
     <div className={Style.app}>
       <UiHeader />
       <UiMain />
-      
+    
     </div>
   );
 }
