@@ -1,0 +1,41 @@
+.wrapper {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.bg {
+    width: 100%;
+    height: 100%;
+    background: url('../../../public/images/bg.jpg'); /* Абсолютный путь */
+    background-size: cover;
+    padding-top: 100px;
+    
+}
+
+.mainTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    height: 70%; 
+    justify-content: center; 
+    
+}
+
+.mainTitle h1 {
+    font-size: 126px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #F6FFBD;
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: 8px;
+    background: linear-gradient(to top, transparent 0%, #F6FFBD 30%);
+    background-clip: text; 
+    -webkit-background-clip: text; 
+    color: transparent; 
+
+}

@@ -1,0 +1,5 @@
+const UiFooter = () => {
+  
+};
+
+export { UiFooter };
