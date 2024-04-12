@@ -39,3 +39,27 @@
     color: transparent; 
 
 }
+
+@media screen and (max-width: 1024px) {
+    .mainTitle h1 {
+        font-size: 96px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .mainTitle h1 {
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .mainTitle h1 {
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 260px) {
+    .mainTitle h1 {
+        font-size: 26px;
+    }
+}
