@@ -1,3 +1,4 @@
+'use client'
 import globalStyle from '../../styles/global.module.scss';
 import Style from '../../styles/header.module.scss';
 import { Burger } from './Burger';
@@ -12,7 +13,7 @@ const UiHeader = () => {
                 <button>TOURS</button>
                 <button>CONTACT</button>
             </nav>
-            <button className={Style.buttonBooking}>BOOKING NOW <span className={Style.flare}></span></button>
+            <button className={Style.buttonBooking}>BOOKING NOW<span className={Style.flare}></span></button>
             <Burger />
         </div>
     )
