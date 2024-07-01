@@ -1,4 +1,3 @@
-'use client'
 import globalStyle from '../../styles/global.module.scss';
 import Style from '../../styles/header.module.scss';
 import { Burger } from './Burger';

@@ -10,10 +10,10 @@ const Burger = () => {
 
     return (
         <>
-            <div className={`${Style.burger} ${isActive ? Style.active : ''}`} onClick={handleBurgerClick}>
+            <div className={[Style.burger, isActive ? Style.active : ''].join(' ')} onClick={handleBurgerClick}>
                 <span></span>
             </div>
-            <nav className={`${Style.burgerMenu} ${isActive ? Style.active : ''}`}>
+            <nav className={[Style.burgerMenu, isActive ? Style.active : ''].join(' ')}>
                 <button>HOME</button>
                 <button>ABOUT</button>
                 <button>TOURS</button>
