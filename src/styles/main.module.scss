@@ -2,28 +2,20 @@
     display: flex;
     justify-content: start;
     align-items: center;
-    width: 100%;
-    height: 100vh;
+    
 }
-
 
 .bg {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background: url('../../public/images/bg.jpg'); /* Абсолютный путь */
-    background-size: cover;
-    padding-top: 100px;
-    
 }
 
 .mainTitle {
     display: flex;
-    flex-direction: column;
-    align-items: center; 
-    height: 70%; 
-    justify-content: center; 
-    animation: fadeInFromBottom 1.5s ease-out; 
-    
+    margin: 0 auto;
+    margin-bottom: 100px;
+    animation: fadeInFromBottom 2s ease-out; 
 }
 
 @keyframes fadeInFromBottom {

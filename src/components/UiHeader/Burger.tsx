@@ -1,6 +1,7 @@
 "use client"
 import { useState } from 'react';
-import Style from '../../styles/header.module.scss';
+import Style from '../../styles/burger.module.scss';
+
 const Burger = () => {
     const [isActive, setActive] = useState(false);
 
