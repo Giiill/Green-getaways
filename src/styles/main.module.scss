@@ -2,19 +2,23 @@
     display: flex;
     justify-content: start;
     align-items: center;
-    
+    padding: 0;
+    margin: 0 auto;
 }
 
 .bg {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
-    background: url('../../public/images/bg.jpg'); /* Абсолютный путь */
+    background: url('../../public/images/bg.jpg'); 
+    background-repeat: no-repeat;
+    background-size: cover
 }
 
 .mainTitle {
     display: flex;
     margin: 0 auto;
-    margin-bottom: 100px;
+    padding: 0;
+    margin-bottom: 150px;
     animation: fadeInFromBottom 2s ease-out; 
 }
 
@@ -38,8 +42,8 @@
     font-weight: 700;
     letter-spacing: 8px;
     background: linear-gradient(to top, transparent 0%, #F6FFBD 30%);
-    background-clip: text; 
     -webkit-background-clip: text; 
+    background-clip: text; 
     color: transparent; 
 
 }

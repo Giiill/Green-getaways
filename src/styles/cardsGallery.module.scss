@@ -1,0 +1,23 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.cardsGallery {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 50px;
+    align-items: center;
+}
+
+.cardsGallery img {
+    display: block;
+    width: 324px;
+    height: 524px;
+    object-fit: cover;
+    border-radius: 25px;
+}
