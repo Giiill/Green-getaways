@@ -1,28 +1,38 @@
 .wrapper {
     padding: 0;
     margin: 0 auto;
-    width: 100%;
+    --screen-breakpoint: 100%; 
+    width: var(--screen-breakpoint);
     height: 100%;
+    
 }
 
 @media screen and (max-width: 1440px) {
     .wrapper {
-        width: 1320px;
+        --screen-breakpoint: 1320px;
+        width: var(--screen-breakpoint);  
+
     }
 }
 @media screen and (max-width: 1320px) {
     .wrapper {
-        width: 1024px;
+        --screen-breakpoint: 1024px;
+        width: var(--screen-breakpoint);  
+
     }
 }
 @media screen and (max-width: 1024px) {
     .wrapper {
-        width: 680px;
+        --screen-breakpoint: 680px;
+        width: var(--screen-breakpoint);  
+ 
     }
 }
 @media screen and (max-width: 680px) {
     .wrapper {
-        width: 100%;
+        --screen-breakpoint: 100%;
+        width: var(--screen-breakpoint);  
+
     }
 }
 

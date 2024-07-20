@@ -6,7 +6,7 @@
     margin: 0 auto;
 }
 
-.cardsGallery {
+.card {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -14,7 +14,7 @@
     align-items: center;
 }
 
-.cardsGallery img {
+.card img {
     display: block;
     width: 324px;
     height: 524px;

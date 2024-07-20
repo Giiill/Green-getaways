@@ -21,17 +21,14 @@ const galleryCards = [
 const UiCardsGallery = () => {
     return (
         <div className={Style.wrapper}>
-   
             {galleryCards.map((item) => {
                 return (
-                    <div className={Style.cardsGallery}>
+                    <div className={Style.card}>
                         <img src={item.img} alt="" />
                     </div>
                 )
             })}
-           
-         </div>
-
+        </div>
     )
 }
 
