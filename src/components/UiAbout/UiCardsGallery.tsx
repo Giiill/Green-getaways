@@ -24,7 +24,6 @@ const UiCardsGallery = () => {
         <div className={Style.wrapper}>
             {galleryCards.map((item) => {
                 return (
-
                     <div className={Style.card}>
                         <Image
                              src={item.img}
