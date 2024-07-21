@@ -1,7 +1,8 @@
-import Style from "../styles/app.module.scss";
-import { UiMain } from ".././components/UiMain/UiMain";
-import { UiHeader } from ".././components/UiHeader/UiHeader";
+import Style from "@/styles/app.module.scss";
+import { UiMain } from "@/components/UiMain/UiMain";
+import { UiHeader } from "@/components/UiHeader/UiHeader";
 import { UiAbout } from "@/components/UiAbout/UiAbout";
+import { UiWhyUs } from "@/components/UiWhyUs/UiWhyUs";
 
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
       <UiHeader />
       <UiMain />
       <UiAbout />
+      <UiWhyUs />
     
     </div>
   );
