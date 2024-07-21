@@ -1,6 +1,7 @@
 import globalStyle from '@/styles/global.module.scss';
 import Style from '@/styles/whyUs.module.scss';
 import Image from 'next/image'
+
 const UiWhyUs = () => {
     return (
         <div className={[globalStyle.wrapper, Style.wrapper].join(' ')}>
@@ -14,7 +15,12 @@ const UiWhyUs = () => {
             </div>
             <div className={Style.image}>
                 <Image
+                    priority={true}
                     src="/images/whyUs/whyUsImage.jpeg"
+                    style={{
+                        width: '100%',
+                        height: '498px',
+                      }}
                     width={436}
                     height={498}
                     alt=""

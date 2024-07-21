@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 500px));
     color: #ffff;
-    row-gap: 70px;
+    gap: 70px;
     padding-left: 150px;
     margin-bottom: 350px;
     position: relative;
@@ -13,14 +13,10 @@
 .backImage {
     position: absolute;
     z-index: 0;
-    backdrop-filter: blur(5px);
-    
 }
 
 .backImage img {
     background-size: cover;
-    width: 836px;
-    height: 698px;
     object-fit: cover;
     filter: brightness(40%) blur(20px);
 }
@@ -30,8 +26,6 @@
 }
 
 .image img {
-    width: 436px;
-    height: 498px;
     object-fit: cover;
     border-radius: 20px;
 }
@@ -66,4 +60,13 @@
     letter-spacing: 1px;
     border-radius: 10px;
     cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+    .wrapper {
+        padding-left: 0px;
+    }
+    .backImage img {
+        width: 100%;
+    }
 }

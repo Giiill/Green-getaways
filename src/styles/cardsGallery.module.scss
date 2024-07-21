@@ -4,6 +4,7 @@
     width: 100%;
     padding: 0;
     margin: 0 auto;
+    gap: 40px;
 }
 
 .card {
@@ -16,8 +17,6 @@
 
 .card img {
     display: block;
-    width: 324px;
-    height: 524px;
     object-fit: cover;
     border-radius: 25px;
 }
