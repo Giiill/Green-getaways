@@ -4,6 +4,7 @@ import { UiHeader } from "@/components/UiHeader/UiHeader";
 import { UiAbout } from "@/components/UiAbout/UiAbout";
 import { UiWhyUs } from "@/components/UiWhyUs/UiWhyUs";
 import { UiPopularTour } from "@/components/UiPopularTour/UiPopularTour";
+import { UiContactUs } from "@/components/UiContactUs/UiContactUs";
 
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <UiAbout />
       <UiWhyUs />
       {/* <UiPopularTour /> */}
+      <UiContactUs />
     
     </div>
   );
