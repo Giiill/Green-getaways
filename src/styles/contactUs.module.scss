@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+    gap: 100px;
 }
 
 .upBlock {
@@ -11,51 +12,60 @@
     gap: 60px;
 }
 
-.title {
+.title h1 {
+    display: grid;
     text-transform: uppercase;
     font-size: 75px;
     color: #9E9E9E;
+    justify-content: center;
 }
 
 .description {
-    padding-left: 28%;
-    padding-right: 28%;
+    padding-left: 24%;
+    padding-right: 24%;
     line-height: 35px;
     color: #ffff;
+    font-size: 18px;
 }
 
 .image {
     display: flex;
     flex-direction: column;
     justify-content: end;
+    max-width: 1257px;
+    max-height: 706px;
 }
 
-.image img {
+.img {
+    width: 100%;
+    height: auto;
     border-radius: 10px;
     object-fit: cover;
 }
 
 .shadow {
     width: 100%;
-    background-color: #141414;
-    box-shadow: 0px 0px 130px 210px #141414;
+    box-shadow: 0px 0px 150px 200px #141414;
+    
 }
 
 .bottomBlock {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 500px;
-    gap: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
     text-align: end;
+    padding-left: 10%;
+    padding-right: 10%;
+   
 }
 
 .form {
     color: #ffff;
-    display: flex;
+    display: grid;
     flex-direction: column;
     gap: 20px;
     max-width: 500px;
     width: 100%;
+    margin: 0 auto;  
 }
 
 .form input {
@@ -66,7 +76,6 @@
     padding-bottom: 5px;
     width: 100%;
 }
-
 
 .form ::placeholder {
     color: #00AC97;
@@ -86,4 +95,57 @@
     object-fit: cover;
     text-transform: uppercase;
     letter-spacing: 2px;    
+}
+
+@media screen and (max-width: 1024px) {
+    .title h1 {
+        font-size: 50px;
+    }
+    .shadow {
+        box-shadow: 0px 0px 100px 120px #141414;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .title h1 {
+        font-size: 40px;
+    }
+    .shadow {
+        box-shadow: 0px 0px 80px 100px #141414;
+    }
+    .description {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .title h1 {
+        font-size: 30px;
+    }
+    .bottomBlock {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+    .shadow {
+        box-shadow: 0px 0px 40px 60px #141414;
+        
+    }
+    .description {
+        font-size: 16px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+@media screen and (max-width: 260px) {
+    .title h1 {
+        font-size: 20px;
+    }
+    .bottomBlock {
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    }
+    .shadow {
+        box-shadow: 0px 0px 20px 40px #141414;
+        
+    }
 }

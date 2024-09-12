@@ -10,10 +10,10 @@ import { UiContactUs } from "@/components/UiContactUs/UiContactUs";
 export default function Home() {
   return (
     <div className={Style.app}>
-      <UiHeader />
+      {/* <UiHeader />
       <UiMain />
       <UiAbout />
-      <UiWhyUs />
+      <UiWhyUs /> */}
       {/* <UiPopularTour /> */}
       <UiContactUs />
     
