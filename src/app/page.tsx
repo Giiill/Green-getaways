@@ -11,13 +11,13 @@ import { UiFooter } from "@/components/UiFooter/UiFooter";
 export default function Home() {
   return (
     <div className={Style.app}>
-      {/* <UiHeader />
+      <UiHeader />
       <UiMain />
       <UiAbout />
-      <UiWhyUs /> */}
+      <UiWhyUs />
       {/* <UiPopularTour /> */}
-      <UiContactUs />
-      <UiFooter />
+      <UiContactUs /> 
+       <UiFooter />
     
     </div>
   );

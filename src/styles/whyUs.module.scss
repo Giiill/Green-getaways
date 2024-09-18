@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 500px));
     gap: 70px;
-    padding-left: 150px;
+    padding-left: 170px;
     margin-bottom: 350px;
     position: relative;
     padding-top: 100px;
@@ -14,19 +14,16 @@
     z-index: 0;
 }
 
-.backImage img {
+.backImg {
     background-size: cover;
     object-fit: cover;
     filter: brightness(40%) blur(20px);
 }
 
-.image {
+.img{
     z-index: 5;
-}
-
-.image img {
     object-fit: cover;
-    border-radius: 20px;
+    border-radius: 20px; 
 }
 
 .content {
@@ -65,8 +62,30 @@
 @media screen and (max-width: 1024px) {
     .wrapper {
         padding-left: 0px;
+        justify-content: center;
     }
     .backImage img {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .img {
+        width: 336px;
+        height: 398px;
+    }
+    .wrapper {
+        padding-left: 10px;
+        grid-template-columns: repeat(auto-fit, minmax(0px, 500px));
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .img {
+        width: 206px;
+        height: 268px;
+    }
+    .title {
+        font-size: 42px;
     }
 }

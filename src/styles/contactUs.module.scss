@@ -42,11 +42,12 @@
     height: auto;
     border-radius: 10px;
     object-fit: cover;
+    background-size: cover;
 }
 
 .shadow {
     width: 100%;
-    box-shadow: 0px 0px 150px 200px #141414;
+    box-shadow: 0px 0px 170px 200px #141414;
     
 }
 
@@ -125,7 +126,7 @@
         font-size: 30px;
     }
     .bottomBlock {
-        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
     }
     .shadow {
         box-shadow: 0px 0px 40px 60px #141414;

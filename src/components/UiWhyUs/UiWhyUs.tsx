@@ -7,25 +7,25 @@ const UiWhyUs = () => {
         <div className={[globalStyle.wrapper, Style.wrapper].join(' ')}>
             <div className={Style.backImage}>
                 <Image
+                    priority={true}
                     src="/images/whyUs/whyUsImage.jpeg"
                     width={836}
                     height={698}
                     alt=""
+                    className={Style.backImg}
+
                 />
             </div>
-            <div className={Style.image}>
-                <Image
-                    priority={true}
-                    src="/images/whyUs/whyUsImage.jpeg"
-                    style={{
-                        width: '100%',
-                        height: '498px',
-                      }}
-                    width={436}
-                    height={498}
-                    alt=""
-                />
-            </div>
+
+            <Image
+                priority={true}
+                src="/images/whyUs/whyUsImage.jpeg"
+                width={436}
+                height={498}
+                alt=""
+                className={Style.img}
+            />
+
             <div className={Style.content}>
                 <h1 className={Style.title}>why us?</h1>
                 <div className={Style.description}>

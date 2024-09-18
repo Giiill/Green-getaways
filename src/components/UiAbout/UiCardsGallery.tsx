@@ -28,11 +28,7 @@ const UiCardsGallery = () => {
                         <Image
                             priority={true}
                              src={item.img}
-                             style={{
-                               width: '100%',
-                               height: '524px',
-                             }}
-                             width={324}
+                             width={724}
                              height={524}
                              alt=""
                            />
