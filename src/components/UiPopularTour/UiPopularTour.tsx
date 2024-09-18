@@ -36,7 +36,7 @@ const UiPopularTour = () => {
             <div className={Style.title}>popular tour</div>
                     <Swiper  
                         loop={false}
-                        centeredSlides={true}
+                        
                         spaceBetween={30}
                         grabCursor={true}
                         pagination={{
@@ -47,10 +47,10 @@ const UiPopularTour = () => {
                             0: {
                                 slidesPerView: 1,
                             },
-                            780: {
+                            550 : {
                                 slidesPerView: 2
                             },
-                            1320: {
+                            800: {
                                 slidesPerView: 3
                             },
                             1540: {
@@ -66,13 +66,10 @@ const UiPopularTour = () => {
                                     <Image
                                         priority={true}
                                         src={item.img}
-                                        style={{
-                                            width: '370px',
-                                            height: '468px',
-                                        }}
-                                        width={370}
+                                        width={870}
                                         height={468}
                                         alt=""
+                                        className={Style.img}
                                     />
                                 </SwiperSlide>
                             )

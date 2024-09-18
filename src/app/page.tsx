@@ -15,7 +15,7 @@ export default function Home() {
       <UiMain />
       <UiAbout />
       <UiWhyUs />
-      {/* <UiPopularTour /> */}
+      <UiPopularTour />
       <UiContactUs /> 
        <UiFooter />
     
