@@ -1,16 +1,14 @@
 "use client"
-import globalStyle from '@/styles/global.module.scss';
 import Style from '@/styles/popularTour.module.scss';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Image from 'next/image'
 
 // Import Swiper styles
 import 'swiper/css';
-import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 
 // import required modules
-import { EffectCoverflow, Pagination } from 'swiper/modules';
+import { Pagination } from 'swiper/modules';
 
 const galleryCards = [
     {
@@ -32,50 +30,72 @@ const galleryCards = [
 
 const UiPopularTour = () => {
     return (
-        <div className={Style.wrapper}>
-            <div className={Style.title}>popular tour</div>
-                    <Swiper  
-                        loop={false}
-                        
-                        spaceBetween={30}
-                        grabCursor={true}
-                        pagination={{
-                          clickable: true,
-                        }}
-                        slidesPerView={4}
-                        breakpoints={{
-                            0: {
-                                slidesPerView: 1,
-                            },
-                            550 : {
-                                slidesPerView: 2
-                            },
-                            800: {
-                                slidesPerView: 3
-                            },
-                            1540: {
-                                slidesPerView: 4
-                            }    
-                        }}
-                        modules={[Pagination]}
-                        className={Style.sliderCards}
-                    >
-                        {galleryCards.map((item) => {
-                            return (
-                                <SwiperSlide className={Style.card}>
-                                    <Image
-                                        priority={true}
-                                        src={item.img}
-                                        width={870}
-                                        height={468}
-                                        alt=""
-                                        className={Style.img}
-                                    />
-                                </SwiperSlide>
-                            )
-                        })}
-                    </Swiper>              
+        <div className={Style.wrapper}>  
+            <div className={Style.backImage}>
+                <Image
+                    priority={true}
+                    src="/images/popularTour/bgSection.jpg"
+                    width={1393}
+                    height={720}
+                    alt=""
+                    className={Style.backImg}
+
+                />
+                <div className={Style.shadow}></div>
             </div>
+            <div className={Style.title}>popular tour</div>
+            <Swiper
+                loop={false}
+                spaceBetween={30}
+                grabCursor={true}
+                pagination={{
+                    clickable: true,
+                }}
+                slidesPerView={4}
+                breakpoints={{
+                    0: {
+                        slidesPerView: 1,
+                    },
+                    550: {
+                        slidesPerView: 2
+                    },
+                    800: {
+                        slidesPerView: 3
+                    },
+                    1540: {
+                        slidesPerView: 4
+                    }
+                }}
+                modules={[Pagination]}
+                className={Style.sliderCards}
+            >
+
+                {galleryCards.map((item) => {
+                    return (
+                        <SwiperSlide className={Style.card}>
+                            <div className={Style.image}>
+                                <Image
+                                    priority={true}
+                                    src={item.img}
+                                    width={870}
+                                    height={468}
+                                    alt=""
+                                    className={Style.img}
+                                />
+                                <div className={Style.blockName}>
+                                    <div>
+                                        <div className={Style.destinationName}>
+                                            destination-name
+                                        </div>
+                                        <span>Plan trip</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </SwiperSlide>
+                    )
+                })}
+            </Swiper>
+        </div>
     )
 }
 

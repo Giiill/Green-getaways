@@ -1,41 +1,95 @@
 .wrapper {
-    margin-bottom: 300px;
+    margin-bottom: 150px;
+    position: relative;
 }
 
 .title {
+    text-transform: uppercase;
+    font-size: 46px;
+    position: relative;
     color: #ffff;
-}
-
-.sliderCards {
-
-}
-
-.card {
-
+    padding-left: 150px;
+    margin-bottom: 50px;
 }
 
 .img {
     max-width: 390px;
     height: 498px;
     width: 100%;
-    border-radius: 10px;
+    border-radius: 20px;
     object-fit: cover;
     background-size: cover;
 }
 
-@media screen and (max-width: 1024px) {
-   .img {}
+.image {
+    display: flex;
+    flex-direction: column;
+    max-width: 390px;
+    width: 100%;
+    position: relative;
+    justify-content: end;
 }
+
+.blockName {
+    position: absolute;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    overflow: hidden;
+    height: 120px;
+    width: 100%;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(15px);
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.blockName span {
+    color: rgb(208, 224, 60);
+    font-size: 20px;
+    
+}
+
+.destinationName {
+    text-transform: uppercase;
+    color: #ffff;
+    font-size: 24px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+
+.backImage {
+    position: absolute;
+    right: 10px;
+
+    z-index: 0;
+    overflow: hidden;
+    filter: brightness(40%) blur(15px);
+}
+
+.backImg {
+    background-size: cover;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.shadow {
+    position: absolute;
+    inset: 0;
+    box-shadow: inset 140px 0 125px -3px #141414;
+    z-index: 1;
+
+
+}
+
 @media screen and (max-width: 680px) {
-    .wrapper {
-        --screen-breakpoint: 100%;
-        width: var(--screen-breakpoint);  
-
+    .title {
+        padding-left: 30px;
     }
-}
 
-@media screen and (max-width: 420px) {
-    .card {
-     
+    .shadow {
+        box-shadow: none;
     }
 }
