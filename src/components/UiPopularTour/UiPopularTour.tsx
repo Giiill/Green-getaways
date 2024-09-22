@@ -3,12 +3,16 @@ import Style from '@/styles/popularTour.module.scss';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Image from 'next/image'
 
+
+
+
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
 
 // import required modules
-import { Pagination } from 'swiper/modules';
+import { Pagination, Autoplay } from 'swiper/modules';
+
 
 const galleryCards = [
     {
@@ -29,8 +33,9 @@ const galleryCards = [
 ]
 
 const UiPopularTour = () => {
+    
     return (
-        <div className={Style.wrapper}>  
+        <div className={Style.wrapper}>
             <div className={Style.backImage}>
                 <Image
                     priority={true}
@@ -45,9 +50,14 @@ const UiPopularTour = () => {
             </div>
             <div className={Style.title}>popular tour</div>
             <Swiper
-                loop={false}
+                modules={[Pagination, Autoplay]}
                 spaceBetween={30}
                 grabCursor={true}
+                loop={true}
+                autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                }}
                 pagination={{
                     clickable: true,
                 }}
@@ -66,7 +76,6 @@ const UiPopularTour = () => {
                         slidesPerView: 4
                     }
                 }}
-                modules={[Pagination]}
                 className={Style.sliderCards}
             >
 
@@ -95,7 +104,7 @@ const UiPopularTour = () => {
                     )
                 })}
             </Swiper>
-        </div>
+        </div >
     )
 }
 
