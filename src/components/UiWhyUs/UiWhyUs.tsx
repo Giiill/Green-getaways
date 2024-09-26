@@ -16,7 +16,6 @@ const UiWhyUs = () => {
 
                 />
             </div>
-
             <Image
                 priority={true}
                 src="/images/whyUs/whyUsImage.jpeg"
@@ -25,7 +24,6 @@ const UiWhyUs = () => {
                 alt=""
                 className={Style.img}
             />
-
             <div className={Style.content}>
                 <h1 className={Style.title}>why us?</h1>
                 <div className={Style.description}>

@@ -3,16 +3,12 @@ import Style from '@/styles/popularTour.module.scss';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Image from 'next/image'
 
-
-
-
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
 
 // import required modules
 import { Pagination, Autoplay } from 'swiper/modules';
-
 
 const galleryCards = [
     {
@@ -33,7 +29,7 @@ const galleryCards = [
 ]
 
 const UiPopularTour = () => {
-    
+
     return (
         <div className={Style.wrapper}>
             <div className={Style.backImage}>
@@ -78,7 +74,6 @@ const UiPopularTour = () => {
                 }}
                 className={Style.sliderCards}
             >
-
                 {galleryCards.map((item) => {
                     return (
                         <SwiperSlide className={Style.card}>

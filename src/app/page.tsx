@@ -10,6 +10,7 @@ import { UiFooter } from "@/components/UiFooter/UiFooter";
 
 export default function Home() {
   return (
+    
     <div className={Style.app}>
       <UiHeader />
       <UiMain />

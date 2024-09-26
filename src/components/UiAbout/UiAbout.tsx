@@ -14,7 +14,6 @@ const UiAbout = () => {
                     height={720}
                     alt=""
                     className={Style.backImg}
-
                 />
                 <div className={Style.shadow}></div>
             </div>

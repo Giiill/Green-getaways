@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
+    "aos": "^2.3.4",
     "green-getaways": "file:",
     "next": "14.2.0",
     "react": "^18",
@@ -19,9 +21,11 @@
     "zustand": "^4.5.2"
   },
   "devDependencies": {
+    "@types/aos": "^3.0.7",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "exports-loader": "^5.0.0",
     "typescript": "^5"
   }
 }
