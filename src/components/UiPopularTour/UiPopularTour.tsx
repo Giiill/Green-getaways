@@ -12,18 +12,23 @@ import { Pagination, Autoplay } from 'swiper/modules';
 
 const galleryCards = [
     {
+        key: 0,
         img: "/images/cardsGallery/1.jpeg",
     },
     {
+        key: 1,
         img: "/images/cardsGallery/2.jpeg",
     },
     {
+        key: 2,
         img: "/images/cardsGallery/3.jpeg",
     },
     {
+        key: 3,
         img: "/images/cardsGallery/4.jpeg",
     },
     {
+        key: 4,
         img: "/images/cardsGallery/5.jpeg",
     },
 ]
@@ -76,7 +81,7 @@ const UiPopularTour = () => {
             >
                 {galleryCards.map((item) => {
                     return (
-                        <SwiperSlide className={Style.card}>
+                        <SwiperSlide key={item.key} className={Style.card}>
                             <div className={Style.image}>
                                 <Image
                                     priority={true}
